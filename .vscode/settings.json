@@ -1,0 +1,5 @@
+{
+    "cmake.sourceDirectory": "/home/samuel/Documentos/Universidad/IoT/esp/hola_mundo/main",
+    "idf.currentSetup": "/home/samuel/.espressif/v6.1-beta1/esp-idf",
+    "idf.port": "/dev/ttyUSB0"
+}
