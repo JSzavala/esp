@@ -19,6 +19,9 @@ void app_main(void)
     printf("No hay interfaz\n");
   } else {
     esp_netif_get_ip_info(netif, &ip_info);
-    printf("IP: %d.%d.%d.%d\n", IP2STR(&ip_info.ip));
+    printf("************************************************************\n"); 
+    printf("IP : %d.%d.%d.%d\n ", IP2STR(&ip_info.ip)); 
+    printf("Net mask : %d.%d.%d.%d\n ", IP2STR(&ip_info.netmask)); 
+    printf("Gateway : %d.%d.%d.%d\n ", IP2STR(&ip_info.gw));
   }
 }
