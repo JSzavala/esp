@@ -10,8 +10,8 @@
 // ---------------------------------------------------------
 // CONFIGURACIÓN DE LA PLATAFORMA IOT
 // ---------------------------------------------------------
-#define THINGSPEAK_URL "https://api.thingspeak.com/update"
-#define THINGSPEAK_API_KEY "9TX4DZZ2UKTUI171" // <- Reemplazar con tu API Key
+#define THINGSPEAK_URL "http://thingspeak.com/"
+#define THINGSPEAK_API_KEY "---------" // <- Reemplazar con tu API Key
 
 // Tarea de FreeRTOS para el envío periódico de información
 void tarea_enviar_http(void *pvParameters) {
