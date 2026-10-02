@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "esp_adc/adc_oneshot.h" // Librería moderna para ADC en ESP-IDF
+#include "esp_adc/adc_oneshot.h" 
 #include "driver/ledc.h"
 
 #define EJEMPLO_ADC_GPIO ADC_CHANNEL_0 
@@ -63,7 +63,6 @@ void app_main(void) {
             printf("Voltaje ADC aproximado: %.2f V\n", raw_value * 3.3 / 4095.0);
             printf("PWM LED en D2: %u / %u\n", (unsigned)duty, (unsigned)LED_PWM_MAX_DUTY);
         }
-
         vTaskDelay(pdMS_TO_TICKS(20));
     }
 }
